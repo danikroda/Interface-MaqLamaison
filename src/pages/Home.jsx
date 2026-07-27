@@ -177,13 +177,13 @@ const HomeScreen = () => {
       </div>
 
       {/* Nav Principal */}
-      <nav className="sticky top-0 z-50 w-full flex items-center justify-between px-6 md:px-12 py-4 shadow-md bg-white border-b border-gray-100">
+      <nav className="sticky top-0 z-50 w-full flex items-center justify-between px-6 md:px-12 py-2 shadow-md bg-white border-b border-gray-100">
         <div className="flex items-center gap-4 w-full max-w-7xl mx-auto">
           <button className="text-[var(--ink)] text-2xl md:hidden">☰</button>
 
-          <div className="flex items-center justify-center cursor-pointer" onClick={() => navigate('/')}>
-             {/* Logo Oficial Inserida Aqui */}
-             <img src="/logo.png" alt="Logo Maq La Maison" className="h-16 w-auto object-contain" />
+          <div className="flex items-center justify-center cursor-pointer py-1" onClick={() => navigate('/')}>
+             {/* Logo AUMENTADA no cabeçalho */}
+             <img src="/logo.png" alt="Logo Maq La Maison" className="h-24 md:h-28 w-auto object-contain" />
           </div>
 
           <div className="flex-1 max-w-2xl mx-6 hidden md:flex items-center bg-gray-50 border border-gray-200 rounded-md overflow-hidden">
@@ -191,11 +191,11 @@ const HomeScreen = () => {
             <input
               type="text"
               placeholder="Buscar máquinas, fornos, mesas..."
-              className="w-full py-2 px-2 bg-transparent outline-none text-gray-700"
+              className="w-full py-3 px-2 bg-transparent outline-none text-gray-700"
             />
           </div>
 
-          <a href={whatsappLink} target="_blank" rel="noreferrer" className="btn-glow hidden md:flex items-center gap-2 bg-green-600 text-white px-5 py-2 rounded hover:bg-green-700 font-semibold shadow-sm">
+          <a href={whatsappLink} target="_blank" rel="noreferrer" className="btn-glow hidden md:flex items-center gap-2 bg-green-600 text-white px-6 py-3 rounded hover:bg-green-700 font-bold shadow-sm">
             Falar no WhatsApp
           </a>
         </div>
@@ -417,9 +417,9 @@ const HomeScreen = () => {
             {/* Coluna 1: Logo e Descrição */}
             <div className="flex flex-col gap-5">
               <div className="flex items-center">
-                 {/* Logo Oficial Inserida Aqui */}
-                 <div className="bg-white p-2 rounded-lg inline-block">
-                   <img src="/logo.png" alt="Logo Maq La Maison" className="h-16 w-auto object-contain" />
+                 {/* Logo AUMENTADA no rodapé */}
+                 <div className="bg-white p-3 rounded-lg inline-block">
+                   <img src="/logo.png" alt="Logo Maq La Maison" className="h-24 md:h-28 w-auto object-contain" />
                  </div>
               </div>
               <p className="text-sm leading-relaxed max-w-sm mt-2">
