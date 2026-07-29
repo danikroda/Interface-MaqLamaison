@@ -239,6 +239,7 @@ const HomeScreen = () => {
               <p className="text-xl font-bold text-[var(--ink-2)] mb-10 border-l-4 border-[var(--gold)] pl-4 italic">
                 Sua confiança é a nossa maior conquista.
               </p>
+              
               <div className="flex flex-col sm:flex-row gap-5 justify-center md:justify-start">
                 <a href={whatsappLink} target="_blank" rel="noreferrer" className="btn-glow bg-[var(--gold)] text-[var(--ink)] hover:bg-[var(--gold-dark)] hover:text-white px-8 py-3.5 rounded text-sm font-bold uppercase text-center shadow-lg transition-all duration-300">
                   Falar no WhatsApp
@@ -246,6 +247,25 @@ const HomeScreen = () => {
                 <button onClick={scrollToOportunidades} className="btn-glow bg-transparent border-2 border-[var(--ink)] text-[var(--ink)] hover:bg-[var(--ink)] hover:text-white px-8 py-3.5 rounded text-sm font-bold uppercase text-center transition-all duration-300 shadow-md">
                   Ver Oportunidades
                 </button>
+              </div>
+
+              {/* Nova instrução com mais espaço e visual elegante */}
+              <div className="mt-14 flex items-center justify-center md:justify-start gap-3 opacity-90">
+                {/* Barrinhas decorativas aparecem apenas no Desktop */}
+                <div className="hidden md:flex items-center gap-1.5">
+                  <span className="w-8 h-[2px] bg-[var(--gold)] rounded-full"></span>
+                  <span className="w-2 h-[2px] bg-[var(--gold)] rounded-full"></span>
+                </div>
+                
+                <p className="text-sm md:text-base font-bold uppercase tracking-widest text-[var(--ink-2)] flex items-center gap-2">
+                  {/* Seta para baixo no Mobile, escondida no Desktop */}
+                  <span className="md:hidden text-[var(--gold)] text-lg animate-pulse">↓</span> 
+                  
+                  Clique na categoria que deseja
+                  
+                  {/* Seta para a direita no Desktop, escondida no Mobile */}
+                  <span className="hidden md:inline-block text-[var(--gold)] text-xl animate-pulse ml-1">➔</span>
+                </p>
               </div>
             </Reveal>
           </div>
@@ -263,6 +283,23 @@ const HomeScreen = () => {
                     <div className="hex-label">Fornos de<br/>Têmpera</div>
                   </div>
                 </div>
+
+                <div className="hex-outer group" onClick={scrollToOportunidades}>
+                  <div className="hex-inner">
+                    {/* URL Generica do Unsplash de Forno/Indústria */}
+                    <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=400&auto=format&fit=crop" alt="Fornos" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                    <div className="hex-label">Bizeladoras</div>
+                  </div>
+                </div>
+
+                <div className="hex-outer group" onClick={scrollToOportunidades}>
+                  <div className="hex-inner">
+                    {/* URL Generica do Unsplash de Forno/Indústria */}
+                    <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=400&auto=format&fit=crop" alt="Fornos" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                    <div className="hex-label">Lavadoras</div>
+                  </div>
+                </div>
+
                 <div className="hex-outer group" onClick={scrollToOportunidades}>
                   <div className="hex-inner">
                     {/* URL Generica do Unsplash de Mesa/Esteira */}
@@ -276,7 +313,7 @@ const HomeScreen = () => {
               <div className="flex gap-4 relative z-20">
                 <div className="hex-outer group" onClick={scrollToOportunidades}>
                   <div className="hex-inner">
-                    <img src="https://images.unsplash.com/photo-1565514020179-0c6a9b9a896d?q=80&w=400&auto=format&fit=crop" alt="Lapidadoras" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                    <img src="https://images.unsplash.com/photo-1530124566582-a618bc2615dc?q=80&w=400&auto=format&fit=crop" alt="Lapidadoras" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                     <div className="hex-label pb-2">Lapidadoras</div>
                   </div>
                 </div>
@@ -368,7 +405,7 @@ const HomeScreen = () => {
         </div>
       </section>
 
-      {/* SEÇÕES INSTITUCIONAIS MOVIDAS PARA O FINAL */}
+     
       
       {/* Quem Somos / O Que Fazemos */}
       <section id="quem-somos" className="w-full bg-white py-20 scroll-mt-24">
