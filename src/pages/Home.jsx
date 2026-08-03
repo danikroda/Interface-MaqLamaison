@@ -45,17 +45,18 @@ const Eyebrow = ({ n, center = false }) => (
 const HomeScreen = () => {
   const navigate = useNavigate();
 
+  // Nomes curtos otimizados para não quebrarem o layout da colmeia
   const categorias = [
-    { id: "fornos-tempera", nome: "Fornos de Têmpera", imagem: "/foto-forno.jpg", pdf: "/catalogo-forno.pdf" },
-    { id: "mesas-corte", nome: "Mesas de Corte", imagem: "/foto-mesa.jpg", pdf: "/catalogo-mesa.pdf" },
-    { id: "lapidadoras", nome: "Lapidadoras / Bilateral", imagem: "/foto-lapidadora.jpg", pdf: "/catalogo-lapidadora.pdf" },
-    { id: "bizeladoras", nome: "Bizeladoras", imagem: "/foto-bizeladora.jpg", pdf: "/catalogo-bizeladora.pdf" },
-    { id: "furadeiras", nome: "Furadeiras / Centro de Usinagem", imagem: "/foto-furadeira.jpg", pdf: "/catalogo-furadeira.pdf" },
-    { id: "lavadoras", nome: "Lavadoras", imagem: "/foto-lavadora.jpg", pdf: "/catalogo-lavadora.pdf" },
-    { id: "fornos-laminacao", nome: "Fornos de Laminação (EVA / PVB)", imagem: "/foto-laminacao.jpg", pdf: "/catalogo-laminacao.pdf" },
-    { id: "movimentacao", nome: "Movimentação / Estocagem", imagem: "/foto-movimentacao.jpg", pdf: "/catalogo-movimentacao.pdf" },
-    { id: "itens-diversos", nome: "Itens Diversos", imagem: "/foto-diversos.jpg", pdf: "/catalogo-diversos.pdf" },
-    { id: "industrias", nome: "Indústrias Temperadoras (À Venda)", imagem: "/foto-industria.jpg", pdf: "/catalogo-industria.pdf" },
+    { id: "fornos-tempera", nome: "Fornos de Têmpera", nomeCurto: "Fornos Têmpera", imagem: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=400&auto=format&fit=crop", pdf: "/catalogo-forno.pdf" },
+    { id: "mesas-corte", nome: "Mesas de Corte", nomeCurto: "Mesas de Corte", imagem: "https://images.unsplash.com/photo-1530124566582-a618bc2615dc?q=80&w=400&auto=format&fit=crop", pdf: "/catalogo-mesa.pdf" },
+    { id: "lapidadoras", nome: "Lapidadoras / Bilateral", nomeCurto: "Lapidadoras", imagem: "https://images.unsplash.com/photo-1565514020179-0c6a9b9a896d?q=80&w=400&auto=format&fit=crop", pdf: "/catalogo-lapidadora.pdf" },
+    { id: "bizeladoras", nome: "Bizeladoras", nomeCurto: "Bizeladoras", imagem: "https://images.unsplash.com/photo-1613665813446-82a78c468a1d?q=80&w=400&auto=format&fit=crop", pdf: "/catalogo-bizeladora.pdf" },
+    { id: "furadeiras", nome: "Furadeiras / Centro de Usinagem", nomeCurto: "C. de Usinagem", imagem: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=400&auto=format&fit=crop", pdf: "/catalogo-furadeira.pdf" },
+    { id: "lavadoras", nome: "Lavadoras", nomeCurto: "Lavadoras", imagem: "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?q=80&w=400&auto=format&fit=crop", pdf: "/catalogo-lavadora.pdf" },
+    { id: "fornos-laminacao", nome: "Fornos de Laminação (EVA / PVB)", nomeCurto: "F. Laminação", imagem: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?q=80&w=400&auto=format&fit=crop", pdf: "/catalogo-laminacao.pdf" },
+    { id: "movimentacao", nome: "Movimentação / Estocagem", nomeCurto: "Movimentação", imagem: "https://images.unsplash.com/photo-1586528116311-ad8ed745eb33?q=80&w=400&auto=format&fit=crop", pdf: "/catalogo-movimentacao.pdf" },
+    { id: "itens-diversos", nome: "Itens Diversos", nomeCurto: "Itens Diversos", imagem: "https://images.unsplash.com/photo-1505098936968-30113b2e75e3?q=80&w=400&auto=format&fit=crop", pdf: "/catalogo-diversos.pdf" },
+    { id: "industrias", nome: "Indústrias Temperadoras (À Venda)", nomeCurto: "Indústrias", imagem: "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=400&auto=format&fit=crop", pdf: "/catalogo-industria.pdf" },
   ];
 
   const diferenciais = [
@@ -143,28 +144,37 @@ const HomeScreen = () => {
         .btn-glow { transition: all .3s cubic-bezier(0.16, 1, 0.3, 1); }
         .btn-glow:hover { transform: translateY(-2px); box-shadow: 0 10px 20px -10px var(--gold-dark); }
 
-        /* Estilos da Colmeia (Hexágonos) */
+        /* Estilos da Colmeia (Hexágonos) ajustados com precisão */
         .hex-outer {
-          width: 200px; height: 220px;
+          width: 155px; height: 175px;
           clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
           background-color: var(--gold);
           display: flex; align-items: center; justify-content: center;
           transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
           cursor: pointer;
         }
-        .hex-outer:hover { transform: scale(1.05); z-index: 20; }
+        .hex-outer:hover { transform: scale(1.08); z-index: 50; }
+        
         .hex-inner {
-          width: 190px; height: 210px;
+          width: 147px; height: 167px;
           clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
           position: relative;
           background-color: var(--cream-dim);
+          display: flex; justify-content: center; align-items: center;
         }
+        
+        /* Ajuste fino na Label para não vazar JAMAIS */
         .hex-label {
-          position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%);
+          position: absolute; bottom: 12px; left: 50%; transform: translateX(-50%);
           background: var(--gold); color: var(--ink);
-          font-weight: 800; font-size: 0.70rem; text-transform: uppercase;
-          padding: 6px 12px; border-radius: 4px; text-align: center;
-          width: 85%; line-height: 1.1; box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+          font-weight: 800; font-size: 9px; /* Fonte reduzida para segurança */
+          letter-spacing: -0.02em;
+          text-transform: uppercase;
+          padding: 5px 2px; border-radius: 3px; text-align: center;
+          width: 88%; line-height: 1.1; box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+          display: flex; align-items: center; justify-content: center; 
+          min-height: 26px;
+          white-space: normal; overflow: hidden; z-index: 10;
         }
 
         @keyframes pulseRing {
@@ -186,7 +196,6 @@ const HomeScreen = () => {
       {/* Nav Principal */}
       <nav className="sticky top-0 z-50 w-full px-6 md:px-12 py-3 shadow-xl bg-[var(--ink)] border-b border-[var(--ink-3)]">
         <div className="flex items-center justify-between w-full max-w-7xl mx-auto gap-4">
-          
           <div className="flex items-center justify-center cursor-pointer py-1 flex-shrink-0" onClick={() => navigate('/')}>
             
               <img src="/logo.svg" alt="Logo Maq La Maison" className="h-16 md:h-20 w-auto object-contain transition-transform duration-500 hover:scale-105" />
@@ -196,7 +205,6 @@ const HomeScreen = () => {
           <button className="text-[var(--cream)] text-3xl md:hidden">☰</button>
 
           <div className="hidden md:flex flex-col items-end gap-4 w-full">
-            
             <div className="flex items-center bg-[var(--ink-2)] border border-[var(--ink-3)] rounded-md overflow-hidden w-full max-w-md transition-all duration-300 focus-within:border-[var(--gold)]">
               <span className="px-3 text-white/40">🔍</span>
               <input type="text" placeholder="Buscar máquinas, fornos, mesas..." className="w-full py-2 px-2 bg-transparent outline-none text-[var(--cream)] text-sm placeholder-white/40" />
@@ -205,7 +213,7 @@ const HomeScreen = () => {
             <div className="flex items-center gap-8">
               <div className="flex items-center gap-6 font-semibold text-[var(--cream-dim)] text-xs tracking-wider uppercase">
                 <a href="#inicio" className="bg-[var(--gold)] text-[var(--ink)] px-4 py-1.5 rounded transition-all duration-300 hover:bg-[var(--gold-dark)] hover:text-white">Home</a>
-                <a href="#oportunidades" className="hover:text-[var(--gold)] transition-colors duration-300">Equipamentos</a>
+                <a href="#oportunidades" className="hover:text-[var(--gold)] transition-colors duration-300">Lançamentos</a>
                 <a href="#quem-somos" className="hover:text-[var(--gold)] transition-colors duration-300">Quem Somos</a>
                 <a href="#diferenciais" className="hover:text-[var(--gold)] transition-colors duration-300">Diferenciais</a>
                 <a href="#contato" className="hover:text-[var(--gold)] transition-colors duration-300">Contato</a>
@@ -220,12 +228,11 @@ const HomeScreen = () => {
         </div>
       </nav>
 
-      {/* NOVO HERO (Topo) com Fundo Claro e Colmeias */}
+      {/* HERO SECTION */}
       <section id="inicio" className="w-full relative flex items-center justify-center overflow-hidden min-h-[600px] bg-[var(--cream)] border-b border-[var(--border-warm)] py-12 md:py-20">
-        <div className="w-full max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-12">
+        <div className="w-full max-w-7xl mx-auto px-6 flex flex-col lg:flex-row items-center justify-between gap-8">
           
-          {/* Lado Esquerdo: Texto Novo */}
-          <div className="text-center md:text-left max-w-xl">
+          <div className="text-center lg:text-left max-w-xl">
             <Reveal delay={100}>
               <h1 className="text-5xl md:text-6xl font-black uppercase italic drop-shadow-sm leading-[1.1] mb-6 text-[var(--ink)] font-serif-display">
                 Máquinas e<br/>Equipamentos
@@ -240,7 +247,7 @@ const HomeScreen = () => {
                 Sua confiança é a nossa maior conquista.
               </p>
               
-              <div className="flex flex-col sm:flex-row gap-5 justify-center md:justify-start">
+              <div className="flex flex-col sm:flex-row gap-5 justify-center lg:justify-start">
                 <a href={whatsappLink} target="_blank" rel="noreferrer" className="btn-glow bg-[var(--gold)] text-[var(--ink)] hover:bg-[var(--gold-dark)] hover:text-white px-8 py-3.5 rounded text-sm font-bold uppercase text-center shadow-lg transition-all duration-300">
                   Falar no WhatsApp
                 </a>
@@ -249,86 +256,56 @@ const HomeScreen = () => {
                 </button>
               </div>
 
-              {/* Nova instrução com mais espaço e visual elegante */}
-              <div className="mt-14 flex items-center justify-center md:justify-start gap-3 opacity-90">
-                {/* Barrinhas decorativas aparecem apenas no Desktop */}
-                <div className="hidden md:flex items-center gap-1.5">
+              <div className="mt-14 flex items-center justify-center lg:justify-start gap-3 opacity-90">
+                <div className="hidden lg:flex items-center gap-1.5">
                   <span className="w-8 h-[2px] bg-[var(--gold)] rounded-full"></span>
                   <span className="w-2 h-[2px] bg-[var(--gold)] rounded-full"></span>
                 </div>
-                
                 <p className="text-sm md:text-base font-bold uppercase tracking-widest text-[var(--ink-2)] flex items-center gap-2">
-                  {/* Seta para baixo no Mobile, escondida no Desktop */}
-                  <span className="md:hidden text-[var(--gold)] text-lg animate-pulse">↓</span> 
-                  
+                  <span className="lg:hidden text-[var(--gold)] text-lg animate-pulse">↓</span> 
                   Clique na categoria que deseja
-                  
-                  {/* Seta para a direita no Desktop, escondida no Mobile */}
-                  <span className="hidden md:inline-block text-[var(--gold)] text-xl animate-pulse ml-1">➔</span>
+                  <span className="hidden lg:inline-block text-[var(--gold)] text-xl animate-pulse ml-1">➔</span>
                 </p>
               </div>
             </Reveal>
           </div>
 
-          {/* Lado Direito: Grid de Colmeias (Hexágonos) idêntico à imagem */}
-          <Reveal delay={300} className="relative w-full max-w-[500px] flex justify-center items-center scale-75 sm:scale-90 md:scale-100 lg:scale-110 origin-center md:origin-right mt-10 md:mt-0">
+          {/* Lado Direito: Grid de Colmeias */}
+          <Reveal delay={300} className="relative w-full lg:w-1/2 flex justify-center items-center scale-50 sm:scale-75 md:scale-90 lg:scale-100 origin-center lg:origin-right mt-10 lg:mt-0">
             <div className="flex flex-col items-center">
               
-              {/* Linha Superior (2 hexágonos) */}
-              <div className="flex gap-4 -mb-[55px] relative z-10">
-                <div className="hex-outer group" onClick={scrollToOportunidades}>
-                  <div className="hex-inner">
-                    {/* URL Generica do Unsplash de Forno/Indústria */}
-                    <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=400&auto=format&fit=crop" alt="Fornos" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
-                    <div className="hex-label">Fornos de<br/>Têmpera</div>
+              <div className="flex gap-2 relative z-10">
+                {categorias.slice(0, 3).map((cat) => (
+                  <div key={cat.id} className="hex-outer group" onClick={() => irParaCategoria(cat.id)}>
+                    <div className="hex-inner">
+                      {/* O 'text-transparent' oculta o texto se a imagem quebrar */}
+                      <img src={cat.imagem} alt={cat.nome} className="w-full h-full object-cover text-transparent group-hover:scale-110 transition-transform duration-500" />
+                      <div className="hex-label">{cat.nomeCurto}</div>
+                    </div>
                   </div>
-                </div>
-
-                <div className="hex-outer group" onClick={scrollToOportunidades}>
-                  <div className="hex-inner">
-                    {/* URL Generica do Unsplash de Forno/Indústria */}
-                    <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=400&auto=format&fit=crop" alt="Fornos" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
-                    <div className="hex-label">Bizeladoras</div>
-                  </div>
-                </div>
-
-                <div className="hex-outer group" onClick={scrollToOportunidades}>
-                  <div className="hex-inner">
-                    {/* URL Generica do Unsplash de Forno/Indústria */}
-                    <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=400&auto=format&fit=crop" alt="Fornos" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
-                    <div className="hex-label">Lavadoras</div>
-                  </div>
-                </div>
-
-                <div className="hex-outer group" onClick={scrollToOportunidades}>
-                  <div className="hex-inner">
-                    {/* URL Generica do Unsplash de Mesa/Esteira */}
-                    <img src="https://images.unsplash.com/photo-1530124566582-a618bc2615dc?q=80&w=400&auto=format&fit=crop" alt="Mesas" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
-                    <div className="hex-label">Mesas de<br/>Corte</div>
-                  </div>
-                </div>
+                ))}
               </div>
 
-              {/* Linha Inferior (3 hexágonos) */}
-              <div className="flex gap-4 relative z-20">
-                <div className="hex-outer group" onClick={scrollToOportunidades}>
-                  <div className="hex-inner">
-                    <img src="https://images.unsplash.com/photo-1530124566582-a618bc2615dc?q=80&w=400&auto=format&fit=crop" alt="Lapidadoras" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
-                    <div className="hex-label pb-2">Lapidadoras</div>
+              <div className="flex gap-2 -mt-[44px] relative z-20">
+                {categorias.slice(3, 7).map((cat) => (
+                  <div key={cat.id} className="hex-outer group" onClick={() => irParaCategoria(cat.id)}>
+                    <div className="hex-inner">
+                      <img src={cat.imagem} alt={cat.nome} className="w-full h-full object-cover text-transparent group-hover:scale-110 transition-transform duration-500" />
+                      <div className="hex-label">{cat.nomeCurto}</div>
+                    </div>
                   </div>
-                </div>
-                <div className="hex-outer group" onClick={scrollToOportunidades}>
-                  <div className="hex-inner">
-                    <img src="https://images.unsplash.com/photo-1613665813446-82a78c468a1d?q=80&w=400&auto=format&fit=crop" alt="Furadeiras" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
-                    <div className="hex-label">Furadeiras<br/>Recortes</div>
+                ))}
+              </div>
+
+              <div className="flex gap-2 -mt-[44px] relative z-30">
+                {categorias.slice(7, 10).map((cat) => (
+                  <div key={cat.id} className="hex-outer group" onClick={() => irParaCategoria(cat.id)}>
+                    <div className="hex-inner">
+                      <img src={cat.imagem} alt={cat.nome} className="w-full h-full object-cover text-transparent group-hover:scale-110 transition-transform duration-500" />
+                      <div className="hex-label">{cat.nomeCurto}</div>
+                    </div>
                   </div>
-                </div>
-                <div className="hex-outer group" onClick={scrollToOportunidades}>
-                  <div className="hex-inner">
-                    <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=400&auto=format&fit=crop" alt="Lavadoras" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
-                    <div className="hex-label pb-2">Lavadoras</div>
-                  </div>
-                </div>
+                ))}
               </div>
               
             </div>
@@ -337,17 +314,16 @@ const HomeScreen = () => {
         </div>
       </section>
 
-      {/* SEÇÃO PRINCIPAL AGORA É A DE EQUIPAMENTOS (Logo após as colmeias) */}
+      {/* SEÇÃO DE EQUIPAMENTOS */}
       <section id="oportunidades" className="w-full bg-[var(--cream-dim)] py-20 border-b border-[var(--border-warm)] scroll-mt-24 shadow-inner">
         <div className="max-w-7xl mx-auto px-6">
           <Reveal className="text-center mb-16">
              <Eyebrow n="01" center />
-             <h2 className="text-3xl md:text-5xl font-bold texto-primario mb-4">Nossos Equipamentos</h2>
+             <h2 className="text-3xl md:text-5xl font-bold texto-primario mb-4">Lançamentos</h2>
              <p className="text-[var(--text-soft)] text-lg">Se alguma oportunidade fizer sentido para o seu negócio, fale diretamente conosco.</p>
           </Reveal>
 
           <div className="flex flex-col lg:flex-row gap-10">
-            {/* Sidebar Esquerda: Categorias */}
             <Reveal as="aside" delay={100} className="w-full lg:w-1/4 flex-shrink-0">
               <div className="cat-header cor-primaria text-white p-4 font-bold uppercase tracking-wider text-sm rounded-t flex justify-between items-center shadow-sm">
                 Categorias
@@ -374,13 +350,12 @@ const HomeScreen = () => {
               </div>
             </Reveal>
 
-            {/* Lado Direito: Grid de Produtos */}
             <div className="w-full lg:w-3/4 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
               {categorias.map((cat, index) => (
                 <Reveal key={cat.id} delay={(index % 3) * 100} className="card-lift bg-[var(--cream)] rounded-lg shadow-md border border-[var(--border-warm)] flex flex-col justify-between overflow-hidden">
                   
-                  <div className="w-full h-48 bg-[var(--border-warm)] border-b border-[var(--border-warm)] relative overflow-hidden">
-                     <img src={cat.imagem} alt={cat.nome} className="w-full h-full object-cover transition-transform duration-700 hover:scale-110" />
+                  <div className="w-full h-48 bg-[var(--border-warm)] border-b border-[var(--border-warm)] relative overflow-hidden flex items-center justify-center">
+                     <img src={cat.imagem} alt={cat.nome} className="w-full h-full object-cover text-transparent transition-transform duration-700 hover:scale-110" />
                   </div>
 
                   <div className="p-6 flex flex-col flex-1 justify-between">
@@ -405,9 +380,7 @@ const HomeScreen = () => {
         </div>
       </section>
 
-     
-      
-      {/* Quem Somos / O Que Fazemos */}
+      {/* Quem Somos */}
       <section id="quem-somos" className="w-full bg-white py-20 scroll-mt-24">
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex flex-col lg:flex-row gap-12">
@@ -528,7 +501,7 @@ const HomeScreen = () => {
               <div className="flex items-center">
                  
                    <img src="/logo.svg" alt="Logo Maq La Maison" className="h-20 md:h-24 w-auto object-contain" />
-                 
+                
               </div>
               <p className="text-sm leading-relaxed max-w-xs mt-2 text-white/70">
                 Intermediação profissional na compra e venda de máquinas para o setor de vidro float.
