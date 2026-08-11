@@ -14,12 +14,12 @@ export const categoriasBase = [
 export const produtosBase = [
   // VERTICAIS
   {
-    id: "a", categoriaId: "fornos-tempera", nome: "Forno de Têmpera TAMGLASS", tipo: "Vertical", medida: "1200mm X 2500mm", valor: "R$ 120.000,00",
+    id: "a", categoriaId: "fornos-tempera", nome: "Forno de Têmpera TAMGLASS", tipo: "", medida: "1200mm X 2500mm", valor: "R$ 120.000,00",
     descricao: "Área Útil de têmpera = 3,00 M2. Têmpera vidros de 6mm a 19mm. Feito Upgrade do Software, sendo moderno e simplificado. Instalado um inversor Siemens. Controle de temperatura por zonas. Desenvolvido melhorias práticas para facilidade de trabalho. Consumo aproximado de 175 KW. “Cliente comprou um Forno horizontal”. OBS: Todas as despesas por conta da compradora. A PRONTA ENTREGA: Carregamento a combinar. Sob confirmação de unidade disponível em estoque.",
     imagens: ["/public/Fornos/forno-tamglass-1200-1.jpeg"]
   },
   {
-    id: "b", categoriaId: "fornos-tempera", nome: "Forno de Têmpera TAMGLASS 2001", tipo: "Vertical", medida: "1600mm X 2700mm", valor: "R$ 155.000,00",
+    id: "b", categoriaId: "fornos-tempera", nome: "Forno de Têmpera TAMGLASS 2001", tipo: "", medida: "1600mm X 2700mm", valor: "R$ 155.000,00",
     descricao: "Área Útil de têmpera = 4,32 M2. (Em Funcionamento). Têmpera vidros de 6mm a 19mm. Roda com disjuntor de 200 Amperes. Necessita de um Transformador de 75KVA. “Cliente comprou um Forno horizontal”. OBS: Todas as despesas por conta da compradora. A PRONTA ENTREGA: Carregamento a combinar. Sob confirmação de unidade disponível em estoque.",
     imagens: ["/public/Fornos/forno-tempera-tamglass-2001-1.jpeg",
              "/public/Fornos/forno-tempera-tamglass-2001-2.jpeg"
@@ -27,100 +27,133 @@ export const produtosBase = [
   },
   // HORIZONTAIS
   {
-    id: "c", categoriaId: "fornos-tempera", nome: "Forno de Têmpera CIFEL 2006/08", tipo: "Horizontal", medida: "1700mm X 3200mm", valor: "R$ 295.000,00",
+    id: "c", categoriaId: "fornos-tempera", nome: "Forno de Têmpera CIFEL 2006/08", tipo: "", medida: "1700mm X 3200mm", valor: "R$ 295.000,00",
     descricao: "Área Útil de têmpera = 5,44 M2. (Parado há 3 Anos. Precisa de alguns componentes. Faltando a mesa de entrada e de saída. Faltam 04 roletes de sílica). Têmpera vidros de 6mm a 19mm. “Cliente comprou outro equipamento.” OBS: Todas as despesas por conta da compradora. A PRONTA ENTREGA: Carregamento a combinar. Sob confirmação de unidade disponível em estoque.",
     imagens: ["/public/Fornos/forno-de-tempera-CIFEL-2006-1.jpeg",
               "/public/Fornos/forno-de-tempera-CIFEL-2006-2.jpeg"
     ]
   },
   {
-    id: "d", categoriaId: "fornos-tempera", nome: "Forno de Têmpera CIFEL 2011 (Série 3)", tipo: "Horizontal", medida: "1900mm X 3200mm", valor: "R$ 630.000,00",
+    id: "d", categoriaId: "fornos-tempera", nome: "Forno de Têmpera CIFEL 2011 (Série 3)", tipo: "", medida: "1900mm X 3200mm", valor: "R$ 630.000,00",
     descricao: "Área Útil de têmpera = 6,08 M2. (Parado). Têmpera vidros de 6mm a 19mm. “Cliente não está utilizando”. OBS: Todas as despesas por conta da compradora. A PRONTA ENTREGA: Carregamento a combinar. Sob confirmação de unidade disponível em estoque.",
     imagens: ["/public/Fornos/forno-de-tempera-CIFEL-2011-1.jpeg",
               "/public/Fornos/forno-de-tempera-CIFEL-2011-2.jpeg"
     ]
   },
   {
-    id: "e", categoriaId: "fornos-tempera", nome: "Forno de Têmpera MAGFORT 2012", tipo: "Horizontal", medida: "2000mm X 3600mm", valor: "Sob Consulta",
+    id: "e", categoriaId: "fornos-tempera", nome: "Forno de Têmpera MAGFORT 2012", tipo: "", medida: "2000mm X 3600mm", valor: "Sob Consulta",
     descricao: "Área Útil de têmpera = 7,20 M2. (Trabalhando). Têmpera vidros de 6 a 10mm. “Cliente comprou um forno maior”. OBS: Todas as despesas por conta da compradora. Sob Programação de Entrega: (A Combinar previsão de disponibilidade). Sob confirmação de unidade disponível em estoque.",
     imagens: ["/public/Fornos/forno-de-tempera-MAGFORT-2012-1.jpeg",
              "/public/Fornos/forno-de-tempera-MAGFORT-2012-2.jpeg"
     ]
   },
   {
-    id: "f", categoriaId: "fornos-tempera", nome: "Forno de Têmpera CIFEL 2017", tipo: "Horizontal", medida: "2000mm X 3800mm", valor: "Sob Consulta",
+    id: "f", categoriaId: "fornos-tempera", nome: "Forno de Têmpera CIFEL 2017", tipo: "", medida: "2000mm X 3800mm", valor: "Sob Consulta",
     descricao: "Área Útil de têmpera = 7,60 M2. (Trabalhando). Têmpera vidros de 6 a 19mm. Software Marca TAMGLASS. “Irão encerrar as atividades”. OBS: Todas as despesas por conta da compradora. A PRONTA ENTREGA: Carregamento a combinar. Sob confirmação de unidade disponível em estoque.",
-    imagens: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=800&auto=format&fit=crop"
+    imagens: ["/public/Fornos/Forno de Tempera CIFEL 2017-1.jpeg",
+              "/public/Fornos/Forno de Tempera CIFEL 2017-.jpeg"
+    ]
   },
   {
-    id: "g", categoriaId: "fornos-tempera", nome: "Forno de Têmpera SGLASS 2017", tipo: "Horizontal", medida: "2750mm X 2200mm", valor: "Sob Consulta",
+    id: "g", categoriaId: "fornos-tempera", nome: "Forno de Têmpera SGLASS 2017", tipo: "", medida: "2750mm X 2200mm", valor: "Sob Consulta",
     descricao: "Área Útil de têmpera = 6,05 M2. (Parado). Têmpera vidros de 6mm a 19mm. “Cliente não está mais utilizando, pois tem outro maior”. OBS: Todas as despesas por conta da compradora. A PRONTA ENTREGA: Carregamento a combinar. Sob confirmação de unidade disponível em estoque.",
-    imagens: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=800&auto=format&fit=crop"
+    imagens: ["/public/Fornos/Forno de Tempera SGLASS 2017-1.jpeg",
+              "/public/Fornos/Forno de Tempera SGLASS 2017-2.jpeg"
+    ]
   },
   {
-    id: "h", categoriaId: "fornos-tempera", nome: "Forno de Têmpera TAMGLASS 2002", tipo: "Horizontal", medida: "2100mm X 3600mm", valor: "Sob Consulta",
+    id: "h", categoriaId: "fornos-tempera", nome: "Forno de Têmpera TAMGLASS 2002", tipo: "", medida: "2100mm X 3600mm", valor: "Sob Consulta",
     descricao: "Área Útil de têmpera = 7,56 M2. (Trabalhando). Têmpera vidros de 6 a 19mm. Software Marca MAINZ. “Cliente comprou um forno maior”. OBS: Todas as despesas por conta da compradora. PRAZO DE ENTREGA: Até 7 Meses, após a confirmação da Compra. Sob confirmação de unidade disponível em estoque.",
-    imagens: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=800&auto=format&fit=crop"
+    imagens: ["/public/Fornos/Forno de Tempera TAMGLASS 2002-1.jpeg",
+              "/public/Fornos/Forno de Tempera TAMGLASS 2002-2.jpeg"
+    ]
   },
   {
-    id: "i", categoriaId: "fornos-tempera", nome: "Forno de Têmpera SGLASS 2014", tipo: "Horizontal", medida: "2400mm X 3800mm", valor: "Sob Consulta",
+    id: "i", categoriaId: "fornos-tempera", nome: "Forno de Têmpera SGLASS 2014", tipo: "", medida: "2400mm X 3800mm", valor: "Sob Consulta",
     descricao: "Área Útil de têmpera = 9,12 M2. (Parado). Têmpera vidros de 4mm a 19mm sendo 4 e 5mm parcial. “Encerrou as atividades da fábrica”. OBS: Todas as despesas por conta da compradora. A PRONTA ENTREGA: Carregamento a combinar. Sob confirmação de unidade disponível em estoque.",
-    imagens: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=800&auto=format&fit=crop"
+    imagens: ["/public/Fornos/Forno de Tempera SGLASS 2014-1.jpeg",
+              "/public/Fornos/Forno de Tempera SGLASS 2014-2.jpeg"
+    ]
   },
   {
-    id: "j", categoriaId: "fornos-tempera", nome: "Forno de Têmpera SGLASS 2010", tipo: "Horizontal", medida: "2300mm X 3800mm", valor: "Sob Consulta",
+    id: "j", categoriaId: "fornos-tempera", nome: "Forno de Têmpera SGLASS 2010", tipo: "", medida: "2300mm X 3800mm", valor: "Sob Consulta",
     descricao: "Área Útil de têmpera = 8,74 M2. (Parado). Têmpera vidros de 4mm a 19mm. Vidros 4 e 5mm em área parcial. Acompanha Mezanino. “Cliente comprou um forno maior”. OBS: Todas as despesas por conta da compradora. A PRONTA ENTREGA: Carregamento a combinar. Sob confirmação de unidade disponível em estoque.",
-    imagens: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=800&auto=format&fit=crop"
+    imagens: ["/public/Fornos/Forno de Tempera SGLASS 2010-1.jpeg",
+              "/public/Fornos/Forno de Tempera SGLASS 2010-2.jpeg",
+              "/public/Fornos/Forno de Tempera SGLASS 2010-3.jpeg"
+    ]
   },
   {
-    id: "k", categoriaId: "fornos-tempera", nome: "Forno de Têmpera SGLASS 2009", tipo: "Horizontal", medida: "2300mm X 3800mm", valor: "Sob Consulta",
+    id: "k", categoriaId: "fornos-tempera", nome: "Forno de Têmpera SGLASS 2009", tipo: "", medida: "2300mm X 3800mm", valor: "Sob Consulta",
     descricao: "Área Útil de têmpera = 8,74 M2. (Trabalhando). Têmpera vidros de 6 a 19mm. “Cliente comprou um forno maior”. OBS: Todas as despesas por conta da compradora. A PRONTA ENTREGA: Carregamento a combinar. Sob confirmação de unidade disponível em estoque.",
-    imagens: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=800&auto=format&fit=crop"
+    imagens: ["/public/Fornos/Forno de Tempera SGLASS 2009-1.jpeg",
+              "/public/Fornos/Forno de Tempera SGLASS 2009-2.jpeg"
+    ]
   },
   {
-    id: "l", categoriaId: "fornos-tempera", nome: "Forno de Têmpera GLASTON 2010", tipo: "Horizontal", medida: "2400mm X 4200mm", valor: "Sob Consulta",
+    id: "l", categoriaId: "fornos-tempera", nome: "Forno de Têmpera GLASTON 2010", tipo: "", medida: "2400mm X 4200mm", valor: "Sob Consulta",
     descricao: "Área Útil de têmpera = 10,08 M2. (Parado). Têmpera vidros de 6mm a 19mm. “Cliente desativou o equipamento”. OBS: Todas as despesas por conta da compradora. A PRONTA ENTREGA: Carregamento a combinar. Sob confirmação de unidade disponível em estoque.",
-    imagens: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=800&auto=format&fit=crop"
+    imagens: ["/public/Fornos/Forno de Tempera GLASTON, 2010-1.jpeg",
+              "/public/Fornos/Forno de Tempera GLASTON, 2010-2.jpeg"
+    ]
   },
   {
-    id: "m", categoriaId: "fornos-tempera", nome: "Forno de Têmpera TAMGLASS 2010", tipo: "Horizontal", medida: "2400mm X 4200mm", valor: "Sob Consulta",
+    id: "m", categoriaId: "fornos-tempera", nome: "Forno de Têmpera TAMGLASS 2010", tipo: "", medida: "2400mm X 4200mm", valor: "Sob Consulta",
     descricao: "Área Útil de têmpera = 10,08 M2. (Parado). Têmpera vidros de 4mm a 19mm, sendo os vidros de 4 e 5mm em área parcial útil. Equipamento foi todo revisado. “Cliente comprou um forno maior”. OBS: Todas as despesas por conta da compradora. A PRONTA ENTREGA: Carregamento a combinar. Sob confirmação de unidade disponível em estoque.",
-    imagens: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=800&auto=format&fit=crop"
+    imagens:  ["/public/Fornos/Forno de Tempera TAMGLASS 2010-1.jpeg",
+              "/public/Fornos/Forno de Tempera TAMGLASS 2010-2.jpeg"
+    ]
   },
   {
-    id: "n", categoriaId: "fornos-tempera", nome: "Forno de Têmpera GLASTON 2012", tipo: "Horizontal", medida: "2400mm X 4200mm", valor: "Sob Consulta",
+    id: "n", categoriaId: "fornos-tempera", nome: "Forno de Têmpera GLASTON 2012", tipo: "", medida: "2400mm X 4200mm", valor: "Sob Consulta",
     descricao: "Área Útil de têmpera = 10,08 M2. (Parado). Têmpera vidros de 6 a 19mm. Possui Sistema de Convecção e estrutura de Mezanino para ventilador. “Cliente comprou um forno maior”. OBS: Todas as despesas por conta da compradora. A PRONTA ENTREGA: Carregamento a combinar. Sob confirmação de unidade disponível em estoque.",
-    imagens: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=800&auto=format&fit=crop"
+    imagens: ["/public/Fornos/Forno de Tempera GLASTON 2012-1.jpeg",
+              "/public/Fornos/Forno de Tempera GLASTON 2012-2.jpeg"
+    ]
   },
   {
-    id: "o", categoriaId: "fornos-tempera", nome: "Forno de Têmpera SGLASS 2014", tipo: "Horizontal", medida: "2400mm X 4400mm", valor: "Sob Consulta",
+    id: "o", categoriaId: "fornos-tempera", nome: "Forno de Têmpera SGLASS 2014", tipo: "", medida: "2400mm X 4400mm", valor: "Sob Consulta",
     descricao: "Área Útil de têmpera = 10,56 M2. (Trabalhando). Têmpera vidros de 6 a 19mm, sendo vidros 4mm e 5mm em área parcial útil. “Cliente está vendendo para comprar um maior”. OBS: Todas as despesas por conta da compradora. PRAZO DE ENTREGA: Em até 5 a 7 meses, após a confirmação da compra. Sob confirmação de unidade disponível para venda.",
-    imagens: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=800&auto=format&fit=crop"
+    imagens: ["/public/Fornos/Forno de Tempera SGLASS 2014-D-1.jpeg",
+              "/public/Fornos/Forno de Tempera SGLASS 2014-D-2.jpeg"
+    ]
   },
   {
-    id: "p", categoriaId: "fornos-tempera", nome: "Forno de Têmpera GLASTON 2016", tipo: "Horizontal", medida: "2400mm X 4200mm", valor: "Sob Consulta",
+    id: "p", categoriaId: "fornos-tempera", nome: "Forno de Têmpera GLASTON 2016", tipo: "", medida: "2400mm X 4200mm", valor: "Sob Consulta",
     descricao: "Área Útil de têmpera = 10,08 M2. (Parado). Têmpera vidros de 4 a 19mm, sendo os vidros 4mm e 5mm em área parcial útil. Possui Sistema Convecção Forçada. “Cliente desativou sua fábrica”. OBS: Todas as despesas por conta da compradora. A PRONTA ENTREGA: Carregamento a combinar. Sob confirmação de unidade disponível em estoque.",
-    imagens: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=800&auto=format&fit=crop"
+    imagens: ["/public/Fornos/Forno de Tempera GLASTON 2016-1.jpeg",
+              "/public/Fornos/Forno de Tempera GLASTON 2016-2.jpeg"
+    ]
   },
   {
-    id: "q", categoriaId: "fornos-tempera", nome: "Forno de Têmpera TAMGLASS 1990/2026", tipo: "Horizontal", medida: "2400mm X 3600mm", valor: "Sob Consulta",
+    id: "q", categoriaId: "fornos-tempera", nome: "Forno de Têmpera TAMGLASS 1990/2026", tipo: "Foto ilustrativa", medida: "2400mm X 3600mm", valor: "Sob Consulta",
     descricao: "Área Útil de têmpera = 8,64 M2. (Parado/desmontado). Têmpera vidros de 4 a 19mm, sendo vidros 4mm e 5mm em área parcial útil. Foi reformado geral, pois foi todo desmontado e todo revisado. Realizado um upgrade para um Novo CLP e Software SGlass ano 2026. “Cliente comprou um forno mais novo e o fabricante revisou todo o equipamento.” OBS: Todas as despesas por conta da compradora. A PRONTA ENTREGA: Carregamento a combinar. Sob confirmação de unidade disponível em estoque.",
-    imagens: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=800&auto=format&fit=crop"
+    imagens: ["/public/Fornos/Forno de Tempera TAMGLASS 1990-2026.jpeg"
+             
+    ]
   },
   {
-    id: "r", categoriaId: "fornos-tempera", nome: "Forno de Têmpera TAMGLASS 2001/2026", tipo: "Horizontal", medida: "2200mm X 4400mm", valor: "Sob Consulta",
+    id: "r", categoriaId: "fornos-tempera", nome: "Forno de Têmpera TAMGLASS 2001/2026", tipo: "Foto ilustrativa", medida: "2200mm X 4400mm", valor: "Sob Consulta",
     descricao: "Área Útil de têmpera = 9,68 M2. (Parado). Têmpera vidros de 4 a 19mm, sendo vidros 4mm e 5mm em área parcial útil. Foi reformado geral, pois foi todo desmontado e todo revisado. (Fibras Novas, resistências Novas). Realizado um upgrade para um Novo CLP e Software SGlass ano 2026. Possui Novo sistema de convecção forçada. “Cliente comprou um forno mais novo e o fabricante revisou todo o equipamento.” OBS: Todas as despesas por conta da compradora. A PRONTA ENTREGA: Carregamento a combinar. Sob confirmação de unidade disponível em estoque.",
-    imagens: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=800&auto=format&fit=crop"
+    imagens:  ["/public/Fornos/Forno de Tempera TAMGLASS 2001-2026.jpeg",
+              "/public/Fornos/Forno de Tempera TAMGLASS 1990-2026.jpeg"
+             
+    ]
   },
   {
-    id: "s", categoriaId: "fornos-tempera", nome: "Forno de Têmpera SGLASS 2019", tipo: "Horizontal", medida: "2700mm X 5100mm", valor: "Sob Consulta",
+    id: "s", categoriaId: "fornos-tempera", nome: "Forno de Têmpera SGLASS 2019", tipo: "", medida: "2700mm X 5100mm", valor: "Sob Consulta",
     descricao: "Área Útil de têmpera = 13,77 M2. Têmpera vidros de 6 a 19mm. Equipamento foi muito pouco utilizado. “Cliente comprou um forno maior (JUMBO)”. OBS: Todas as despesas por conta da compradora. A PRONTA ENTREGA: Carregamento a combinar. Sob confirmação de unidade disponível em estoque.",
-    imagens: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=800&auto=format&fit=crop"
+    imagens: ["/public/Fornos/Forno de Tempera SGLASS 2019.jpeg"
+             
+    ]
   },
   {
-    id: "t", categoriaId: "fornos-tempera", nome: "Forno de Têmpera GLASTON FTF 2450", tipo: "Horizontal", medida: "2400mm X 5000mm", valor: "Sob Consulta",
+    id: "t", categoriaId: "fornos-tempera", nome: "Forno de Têmpera GLASTON FTF 2450", tipo: "Foto ilustrativa", medida: "2400mm X 5000mm", valor: "Sob Consulta",
     descricao: "Área Útil de têmpera = 12,00 M2. (Parado/desmontado). Têmpera vidros de 6 a 19mm. Possui Sistema Convecção Forçada (Atende a vidros Lowe de até 0,08 de emissividade ou superior). OBS: Todas as despesas por conta da compradora. A PRONTA ENTREGA: Carregamento a combinar. Sob confirmação de unidade disponível em estoque.",
-    imagens: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=800&auto=format&fit=crop"
+    imagens: ["/public/Fornos/Forno de Tempera GLASTON, FTF 2450-1.jpeg",
+              "/public/Fornos/Forno de Tempera GLASTON, FTF 2450-2.jpeg"
+             
+    ]
   }
 ,
   {
