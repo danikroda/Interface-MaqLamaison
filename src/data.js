@@ -57,7 +57,8 @@ export const produtosBase = [
   {
     id: "g", categoriaId: "fornos-tempera", nome: "Forno de Têmpera SGLASS 2017", tipo: "", medida: "2750mm X 2200mm", valor: "Sob Consulta",
     descricao: "Área Útil de têmpera = 6,05 M2. (Parado). Têmpera vidros de 6mm a 19mm. “Cliente não está mais utilizando, pois tem outro maior”. OBS: Todas as despesas por conta da compradora. A PRONTA ENTREGA: Carregamento a combinar. Sob confirmação de unidade disponível em estoque.",
-    imagens: ["/public/Fornos/Forno de Tempera SGLASS 2017-1.jpeg",
+    imagens: ["/public/Fornos/forno-tempera.mp4",
+      "/public/Fornos/Forno de Tempera SGLASS 2017-1.jpeg",
               "/public/Fornos/Forno de Tempera SGLASS 2017-2.jpeg"
     ]
   },
@@ -224,178 +225,182 @@ export const produtosBase = [
 {
     id: "lap-a", categoriaId: "lapidadoras", nome: "Lapidadora horizontal MODELADORA BIG JOB 2002", tipo: "Horizontal / Manual", medida: "Não informada", valor: "R$ 35.000,00",
     descricao: "Características: Em Pleno Funcionamento. OBS: Todas as despesas por conta da compradora. (Encontra-se região do Distrito Federal). A PRONTA ENTREGA: carregamento á combinar. Sob confirmação de unidade disponível em estoque.",
-    imagens: ["/Lapidadoras/sem-foto.jpg"] // <--- AJUSTE AQUI COM A SUA FOTO
+    imagens: ["/Lapidadora/Lapidadora-horizonta-MODELADORA-BIG-JOB-2002.jpeg"] // <--- AJUSTE AQUI COM A SUA FOTO
   },
   {
     id: "lap-b", categoriaId: "lapidadoras", nome: "Lapidadora horizontal MODELADORA BIG JOB 2020", tipo: "Horizontal / Manual", medida: "Não informada", valor: "R$ 39.500,00",
     descricao: "Características: Em pleno funcionamento. OBS: Todas as despesas por conta da compradora. (Encontra-se região do Distrito Federal). A PRONTA ENTREGA: carregamento á combinar. Sob confirmação de unidade disponível em estoque.",
-    imagens: ["/Lapidadoras/sem-foto.jpg"]
+    imagens: ["/Lapidadora/Lapidadora-horizontal-MODELADORA-BIG-JOB-2020.jpeg"]
   },
 
   // LAPIDADORAS VERTICAIS
   {
     id: "lap-c", categoriaId: "lapidadoras", nome: "Lapidadora MAKI-VETRO", tipo: "Vertical", medida: "Modelo 22", valor: "R$ 26.000,00",
     descricao: "Características: Modelo 22. OBS: Todas as despesas por conta da compradora. (Encontra-se na região Sul). A PRONTA ENTREGA: carregamento á combinar. Sob confirmação de unidade disponível em estoque.",
-    imagens: ["/Lapidadoras/sem-foto.jpg"]
+    imagens: ["/Lapidadora/Lapidadora-MAKI-VETRO.jpeg"]
   },
   {
     id: "lap-d", categoriaId: "lapidadoras", nome: "Lapidadora MAKI-VETRO 1995/2000", tipo: "Vertical", medida: "Modelo 22", valor: "R$ 28.000,00",
     descricao: "Características: Modelo 22. OBS: Todas as despesas por conta da compradora. (Encontra-se na região Sul). A PRONTA ENTREGA: carregamento á combinar. Sob confirmação de unidade disponível em estoque.",
-    imagens: ["/Lapidadoras/sem-foto.jpg"]
+    imagens: ["/Lapidadora/Lapidadora-MAKI-VETRO-1995-2000.jpeg"]
   },
   {
     id: "lap-e", categoriaId: "lapidadoras", nome: "Lapidadora PERIFÉRICA USE LP04", tipo: "Vertical", medida: "Não informada", valor: "R$ 29.500,00",
     descricao: "Características: A venda 02 equipamentos semelhantes pelo valor de R$58.000,00. OBS: Todas as despesas por conta da compradora. (Encontra-se na região Nordeste). A PRONTA ENTREGA: carregamento á combinar. Sob confirmação de unidade disponível em estoque.",
-    imagens: ["/Lapidadoras/sem-foto.jpg"]
+    imagens: ["/Lapidadora/Lapidadora-PERIFÉRICA-USE-LP0-1.jpeg",
+      "/Lapidadora/Lapidadora-PERIFÉRICA-USE-LP0-2.jpeg"
+    ]
   },
   {
     id: "lap-f", categoriaId: "lapidadoras", nome: "Lapidadora Perif. MAK-VETRO", tipo: "Vertical", medida: "Não informada", valor: "R$ 34.900,00",
     descricao: "Características: Possui 02 Equip, assim consegue fazer por R$ 69.000,00 as 02 unidades. OBS: Todas as despesas por conta da compradora. (Encontra-se na região Sudeste). A PRONTA ENTREGA: carregamento á combinar. Sob confirmação de unidade disponível em estoque.",
-    imagens: ["/Lapidadoras/sem-foto.jpg"]
+    imagens: ["/Lapidadora/Lapidadora-Perif-MAK-VETRO.jpeg"]
   },
   {
-    id: "lap-g", categoriaId: "lapidadoras", nome: "Lapidadora PERIFÉRICA 44", tipo: "Vertical", medida: "Não informada", valor: "R$ 38.000,00",
+    id: "lap-g", categoriaId: "lapidadoras", nome: "Lapidadora PERIFÉRICA 44", tipo: "Foto Ilustrativa", medida: "Não informada", valor: "R$ 38.000,00",
     descricao: "Características: (Cliente possui 03 unidades a venda, assim consegue fazer por R$ 100.000,00 as 03 unidades). OBS: Todas as despesas por conta da compradora. (Encontra-se na região Sudeste). A PRONTA ENTREGA: carregamento á combinar. Sob confirmação de unidade disponível em estoque.",
-    imagens: ["/Lapidadoras/sem-foto.jpg"]
+    imagens: ["/Lapidadora/Lapidadora-Perif-MAK-VETRO.jpeg"]
   },
   {
-    id: "lap-h", categoriaId: "lapidadoras", nome: "Lapidadora PERIFÉRICA PRINCIPAL MF44", tipo: "Vertical", medida: "Não informada", valor: "R$ 40.000,00",
+    id: "lap-h", categoriaId: "lapidadoras", nome: "Lapidadora PERIFÉRICA PRINCIPAL MF44", tipo: "Foto Ilustrativa", medida: "Não informada", valor: "R$ 40.000,00",
     descricao: "Características: lapidação Reta, de bordas com acabamento. OBS: Todas as despesas por conta da compradora. (Encontra-se na região Sudeste). A PRONTA ENTREGA: Carregamento a combinar. Sob confirmação de unidade disponível em estoque.",
-    imagens: ["/Lapidadoras/sem-foto.jpg"]
+    imagens: ["/Lapidadora/Lapidadora-Perif-MAK-VETRO.jpeg"]
   },
   {
-    id: "lap-i", categoriaId: "lapidadoras", nome: "Lapidadora PERIFÉRICA LATUADA", tipo: "Vertical", medida: "04 Rebolos", valor: "R$ 46.000,00",
+    id: "lap-i", categoriaId: "lapidadoras", nome: "Lapidadora PERIFÉRICA LATUADA", tipo: "vertical", medida: "04 Rebolos", valor: "R$ 46.000,00",
     descricao: "Características: Com 04 Rebolos, em funcionamento. OBS: Todas as despesas por conta da compradora. (Encontra-se na região Sul). A PRONTA ENTREGA: carregamento á combinar. Sob confirmação de unidade disponível em estoque.",
-    imagens: ["/Lapidadoras/sem-foto.jpg"]
+    imagens: ["/Lapidadora/Lapidadora-PERIFÉRICA-LATUADA-1.jpeg",
+      "/Lapidadora/Lapidadora-PERIFÉRICA-LATUADA-2.jpeg"
+    ]
   },
   {
     id: "lap-j", categoriaId: "lapidadoras", nome: "Lapidadora PERIFÉRICA SMART BAVELLONI 2012", tipo: "Vertical", medida: "Não informada", valor: "R$ 48.000,00",
     descricao: "Características: Toda Reformada. OBS: Todas as despesas por conta da compradora. (Encontra-se na região Sudeste). A PRONTA ENTREGA: Carregamento á combinar. Sob confirmação de disponibilidade em estoque.",
-    imagens: ["/Lapidadoras/sem-foto.jpg"]
+    imagens: ["/Lapidadora/Lapidadora-PERIFÉRICA-SMART-BAVELLONI-2012.jpeg"]
   },
   {
     id: "lap-k", categoriaId: "lapidadoras", nome: "Lapidadora PERIFÉRICA", tipo: "Vertical", medida: "04 Rebolos", valor: "R$ 48.000,00",
     descricao: "Características: 04 Rebolos. OBS: Todas as despesas por conta da compradora. (Encontra-se na região Sudeste). Á PRONTA ENTREGA: A combinar o prazo de entrega. Sob confirmação de unidades disponíveis para venda.",
-    imagens: ["/Lapidadoras/sem-foto.jpg"]
+    imagens: ["/Lapidadora/Lapidadora-PERIFÉRICA.jpeg"]
   },
   {
     id: "lap-l", categoriaId: "lapidadoras", nome: "Lapidadora PERIFÉRICA USE PC 600 (2014)", tipo: "Vertical", medida: "06 Rebolos", valor: "R$ 48.000,00",
     descricao: "Características: 06 rebolos. OBS: Todas as despesas por conta da compradora. (Encontra-se na região SUL). A PRONTA ENTREGA: carregamento á combinar. Sob confirmação de unidade disponível em estoque.",
-    imagens: ["/Lapidadoras/sem-foto.jpg"]
+    imagens: ["/Lapidadora/Lapidadora-PERIFÉRICA-USE-PC-600-2014.jpeg"]
   },
   {
     id: "lap-m", categoriaId: "lapidadoras", nome: "Lapidadora PERIFÉRICA LP 600", tipo: "Vertical", medida: "Não informada", valor: "R$ 49.500,00",
     descricao: "Características: A venda 02 equipamentos semelhantes pelo valor de R$98.000,00. OBS: Todas as despesas por conta da compradora. (Encontra-se na região Nordeste). A PRONTA ENTREGA: carregamento á combinar. Sob confirmação de unidade disponível em estoque.",
-    imagens: ["/Lapidadoras/sem-foto.jpg"]
+    imagens: ["/Lapidadora/sem-foto.jpg"]
   },
   {
     id: "lap-n", categoriaId: "lapidadoras", nome: "Lapidadora USE MAK - LC-6 / 2015", tipo: "Vertical", medida: "06 Rebolos Copo", valor: "R$ 50.000,00",
     descricao: "Características: 06 Rebolos Copo. OBS: Todas as despesas por conta da compradora. (Encontra-se na região Sul). A PRONTA ENTREGA: carregamento á combinar. Sob confirmação de unidade disponível em estoque.",
-    imagens: ["/Lapidadoras/sem-foto.jpg"]
+    imagens: ["/Lapidadora/sem-foto.jpg"]
   },
   {
     id: "lap-o", categoriaId: "lapidadoras", nome: "Lapidadora PERIFÉRICA BAVELLONI 2009", tipo: "Vertical", medida: "Não informada", valor: "R$ 52.000,00",
     descricao: "Características: Recentemente Reformada. OBS: Todas as despesas por conta da compradora. (Encontra-se na região Sul). A PRONTA ENTREGA: carregamento á combinar. Sob confirmação de unidade disponível em estoque.",
-    imagens: ["/Lapidadoras/sem-foto.jpg"]
+    imagens: ["/Lapidadora/sem-foto.jpg"]
   },
   {
     id: "lap-p", categoriaId: "lapidadoras", nome: "Lapidadora USE-PC600 2010", tipo: "Vertical", medida: "Não informada", valor: "R$ 58.000,00",
     descricao: "Características: Recentemente foi toda Reformada. OBS: Todas as despesas por conta da compradora. (Encontra-se na região Sudeste). A PRONTA ENTREGA: carregamento á combinar. Sob confirmação de unidade disponível em estoque.",
-    imagens: ["/Lapidadoras/sem-foto.jpg"]
+    imagens: ["/Lapidadora/sem-foto.jpg"]
   },
   {
     id: "lap-q", categoriaId: "lapidadoras", nome: "Lapidadora SINGIP", tipo: "Vertical", medida: "09 Rebolos", valor: "R$ 68.900,00",
     descricao: "Características: Precisa de revisão. Valor da forma em que se encontra. OBS: Todas as despesas por conta da compradora. (Encontra-se na região Sudeste). A PRONTA ENTREGA: carregamento á combinar. Sob confirmação de unidade disponível em estoque.",
-    imagens: ["/Lapidadoras/sem-foto.jpg"]
+    imagens: ["/Lapidadora/sem-foto.jpg"]
   },
   {
     id: "lap-r", categoriaId: "lapidadoras", nome: "Lapidadora USEMAK", tipo: "Vertical", medida: "10 Rebolos Copos", valor: "R$ 55.000,00",
     descricao: "Características: 10 rebolos copos, revisada a pouco tempo. OBS: Todas as despesas por conta da compradora. (Encontra-se na região Sudeste). A PRONTA ENTREGA: carregamento á combinar. Sob confirmação de unidade disponível em estoque.",
-    imagens: ["/Lapidadoras/sem-foto.jpg"]
+    imagens: ["/Lapidadora/sem-foto.jpg"]
   },
   {
     id: "lap-s", categoriaId: "lapidadoras", nome: "Lapidadora SCHIATTI 2008", tipo: "Vertical", medida: "Não informada", valor: "R$ 85.000,00",
     descricao: "Características: Equipamento da forma em que se encontra, para reformar. OBS: Todas as despesas por conta da compradora. (Encontra-se na região Norte). A PRONTA ENTREGA: carregamento á combinar. Sob confirmação de unidade disponível em estoque.",
-    imagens: ["/Lapidadoras/sem-foto.jpg"]
+    imagens: ["/Lapidadora/sem-foto.jpg"]
   },
   {
     id: "lap-t", categoriaId: "lapidadoras", nome: "Lapidadora SINGIP 2021", tipo: "Vertical", medida: "Não informada", valor: "R$ 85.000,00",
     descricao: "Características: Esta Trabalhando. Possui 04 unidades e consegue fazer nas 04 maquinas juntas por R$ 320.000,00. OBS: Todas as despesas por conta da compradora. (Encontra-se na região Sudeste). A PRONTA ENTREGA: carregamento á combinar. Sob confirmação de unidade disponível em estoque.",
-    imagens: ["/Lapidadoras/sem-foto.jpg"]
+    imagens: ["/Lapidadora/sem-foto.jpg"]
   },
   {
     id: "lap-u", categoriaId: "lapidadoras", nome: "Lapidadora CHINESA", tipo: "Vertical", medida: "Não informada", valor: "R$ 85.000,00",
     descricao: "Características: Equipamento vai ser todo revisado. Garantia de 6 Meses. OBS: Todas as despesas por conta da compradora. (Encontra-se na região Sudeste). A PRONTA ENTREGA: Á combinar sob programação. Sob confirmação de unidade disponível em estoque.",
-    imagens: ["/Lapidadoras/sem-foto.jpg"]
+    imagens: ["/Lapidadora/sem-foto.jpg"]
   },
   {
     id: "lap-v", categoriaId: "lapidadoras", nome: "Lapidadora CHINESA", tipo: "Vertical", medida: "09 Rebolos", valor: "R$ 100.000,00",
     descricao: "Características: 09 rebolos com cavalete Longo / Sapatas. OBS: Todas as despesas por conta da compradora. (Encontra-se na região Sudeste). A PRONTA ENTREGA: carregamento á combinar. Sob confirmação de unidade disponível em estoque.",
-    imagens: ["/Lapidadoras/sem-foto.jpg"]
+    imagens: ["/Lapidadora/sem-foto.jpg"]
   },
   {
     id: "lap-x", categoriaId: "lapidadoras", nome: "Lapidadora DEWAY 2017", tipo: "Vertical", medida: "Não informada", valor: "R$ 123.900,00",
     descricao: "Características: Toda reformada em 2025. OBS: Todas as despesas por conta da compradora. (Encontra-se na região Sudeste). A PRONTA ENTREGA: carregamento á combinar. Sob confirmação de unidade disponível em estoque.",
-    imagens: ["/Lapidadoras/sem-foto.jpg"]
+    imagens: ["/Lapidadora/sem-foto.jpg"]
   },
   {
     id: "lap-z", categoriaId: "lapidadoras", nome: "Lapidadora LATUADA 2005", tipo: "Vertical", medida: "08 Rebolos", valor: "R$ 130.000,00",
     descricao: "Características: Com 08 Rebolos recentemente reformada. OBS: Todas as despesas por conta da compradora. (Encontra-se na região Sul). A PRONTA ENTREGA: carregamento á combinar. Sob confirmação de unidade disponível em estoque.",
-    imagens: ["/Lapidadoras/sem-foto.jpg"]
+    imagens: ["/Lapidadora/sem-foto.jpg"]
   },
   {
     id: "lap-aa", categoriaId: "lapidadoras", nome: "Lapidadora BOTERO 108F 2013", tipo: "Vertical", medida: "Modelo Victralux/15", valor: "R$ 150.000,00",
     descricao: "Características: Modelo Victralux/15, e possui 02 unidades, (sendo 01 ano 2013 e a outra ano 2015). O Conjunto por R$ 295.000,00. OBS: Todas as despesas por conta da compradora. (Encontra-se na região Sul). A PRONTA ENTREGA: carregamento á combinar. Sob confirmação de unidade disponível em estoque.",
-    imagens: ["/Lapidadoras/sem-foto.jpg"]
+    imagens: ["/Lapidadora/sem-foto.jpg"]
   },
   {
     id: "lap-ab", categoriaId: "lapidadoras", nome: "Lapidadora BOTERO 110C 2013", tipo: "Vertical", medida: "Não informada", valor: "R$ 160.000,00",
     descricao: "Características: Foi reformada e esta em perfeito funcionamento. OBS: Todas as despesas por conta da compradora. (Encontra-se na região Sudeste). A PRONTA ENTREGA: carregamento á combinar. Sob confirmação de unidade disponível em estoque.",
-    imagens: ["/Lapidadoras/sem-foto.jpg"]
+    imagens: ["/Lapidadora/sem-foto.jpg"]
   },
   {
     id: "lap-ac", categoriaId: "lapidadoras", nome: "Lapidadoras GLASTON 2012 (Bavelloni)", tipo: "Vertical", medida: "8 Rebolos", valor: "R$ 170.000,00",
     descricao: "Características: 8 rebolos. OBS: Todas as despesas por conta da compradora. (Encontra-se na região Sudeste). A PRONTA ENTREGA: carregamento á combinar.",
-    imagens: ["/Lapidadoras/sem-foto.jpg"]
+    imagens: ["/Lapidadora/sem-foto.jpg"]
   },
   {
     id: "lap-ad", categoriaId: "lapidadoras", nome: "Lapidadoras BOTERO 2020", tipo: "Vertical", medida: "Não informada", valor: "R$ 175.000,00",
     descricao: "Características: trabalhando, (Venda de 02 Equip / conjunto iguais pelo Valor R$ 340.000,00). OBS: Todas as despesas por conta da compradora. (Encontra-se na região Sul). A PRONTA ENTREGA: carregamento á combinar. Sob confirmação de unidade disponível em estoque.",
-    imagens: ["/Lapidadoras/sem-foto.jpg"]
+    imagens: ["/Lapidadora/sem-foto.jpg"]
   },
   {
     id: "lap-ae", categoriaId: "lapidadoras", nome: "Lapidadora BOTERO 2013- 110FC", tipo: "Vertical", medida: "Não informada", valor: "R$ 200.000,00",
     descricao: "Características: Equipamento trabalhando. OBS: Todas as despesas por conta da compradora. (Encontra-se na região Sudeste). A PRONTA ENTREGA: carregamento á combinar. Sob confirmação de unidade disponível em estoque.",
-    imagens: ["/Lapidadoras/sem-foto.jpg"]
+    imagens: ["/Lapidadora/sem-foto.jpg"]
   },
   {
     id: "lap-af", categoriaId: "lapidadoras", nome: "Lapidadora BOTERO 2010- 110FC", tipo: "Vertical", medida: "Não informada", valor: "R$ 240.000,00",
     descricao: "Características: Equipamento trabalhando. OBS: Todas as despesas por conta da compradora. (Encontra-se na região Sudeste). A PRONTA ENTREGA: carregamento á combinar. Sob confirmação de unidade disponível em estoque.",
-    imagens: ["/Lapidadoras/sem-foto.jpg"]
+    imagens: ["/Lapidadora/sem-foto.jpg"]
   },
 
   // LINHAS AUTOMÁTICAS DE LAPIDAÇÃO
   {
     id: "lap-ag", categoriaId: "lapidadoras", nome: "Linha automática (04 Lapidadoras+Robos)", tipo: "Linha Automática", medida: "Não informada", valor: "R$ 334.000,00",
     descricao: "Características: Contém 04 Lapidadoras USE MAK (Sendo 02 USE P600 e 02 USE P04) + 03 Robôs Turnovers tombadores Singip. OBS: Todas as despesas por conta da compradora. (Encontra-se na região Sudeste). A PRONTA ENTREGA: carregamento á combinar. Sob confirmação de unidade disponível em estoque.",
-    imagens: ["/Lapidadoras/sem-foto.jpg"]
+    imagens: ["/Lapidadora/sem-foto.jpg"]
   },
   {
     id: "lap-ah", categoriaId: "lapidadoras", nome: "Linha automática com 04 Lapidadoras BOVONE", tipo: "Linha Automática", medida: "Não informada", valor: "R$ 1.200.000,00",
     descricao: "Características: Contém 03 Lapidadoras (ano1997 Reformadas) + 01 Lapidadora (2017) + 03 Robôs Turnovers tombadores Singip. OBS: Todas as despesas por conta da compradora. (Encontra-se na região Sudeste). A PRONTA ENTREGA: carregamento á combinar. Sob confirmação de unidade disponível em estoque.",
-    imagens: ["/Lapidadoras/sem-foto.jpg"]
+    imagens: ["/Lapidadora/sem-foto.jpg"]
   },
 
   // BI-LATERAL
   {
     id: "lap-ai", categoriaId: "lapidadoras", nome: "BI-Lateral - SCHIATTI", tipo: "Bilateral", medida: "1200MM X 1600MM", valor: "R$ 600.000,00",
     descricao: "Características: BFT MINI 8 + TRANSFER (1200MM X 1600MM). OBS: Todas as despesas por conta da compradora. (Encontra-se na região Sudeste). A PRONTA ENTREGA: carregamento á combinar. Sob confirmação de unida disponível em estoque.",
-    imagens: ["/Lapidadoras/sem-foto.jpg"]
+    imagens: ["/Lapidadora/sem-foto.jpg"]
   },
   {
     id: "lap-aj", categoriaId: "lapidadoras", nome: "BI-Lateral-INTERMAC BUSETTI F10-K - 2019", tipo: "Bilateral", medida: "1600mm x 2600mm", valor: "R$ 2.500.000,00",
     descricao: "Características: Area útil de 1600mm x 2600mm com 02 transfers. (Equipamento muito pouco utilizado). OBS: Todas as despesas por conta da compradora. (Encontra-se na região Centro Oeste). A PRONTA ENTREGA: carregamento á combinar. Sob confirmação de unida disponível em estoque.",
-    imagens: ["/Lapidadoras/sem-foto.jpg"]
+    imagens: ["/Lapidadora/sem-foto.jpg"]
   }
 
   ,
